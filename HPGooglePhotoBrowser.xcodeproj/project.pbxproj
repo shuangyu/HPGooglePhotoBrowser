@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67F425391B4D088000273468 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F425381B4D088000273468 /* main.m */; };
+		67F4253C1B4D088000273468 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F4253B1B4D088000273468 /* AppDelegate.m */; };
+		67F425471B4D088000273468 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F425451B4D088000273468 /* LaunchScreen.xib */; };
+		67F425531B4D088000273468 /* HPGooglePhotoBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F425521B4D088000273468 /* HPGooglePhotoBrowserTests.m */; };
+		67F425621B4D08BB00273468 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F4255D1B4D08BB00273468 /* CollectionViewCell.m */; };
+		67F425631B4D08BB00273468 /* HPPhotoBrowserAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F4255F1B4D08BB00273468 /* HPPhotoBrowserAnimation.m */; };
+		67F425641B4D08BB00273468 /* HPPhotoBrowserViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F425611B4D08BB00273468 /* HPPhotoBrowserViewContorller.m */; };
+		67F425691B4D08C300273468 /* UIViewController+ControllerExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F425661B4D08C300273468 /* UIViewController+ControllerExt.m */; };
+		67F4256A1B4D08C300273468 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F425681B4D08C300273468 /* ViewController.m */; };
+		67F4256D1B4D08CA00273468 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F4256C1B4D08CA00273468 /* ImageViewController.m */; };
+		67F4256F1B4D08D600273468 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F4256E1B4D08D600273468 /* Images.xcassets */; };
+		67F425711B4D08EE00273468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F425701B4D08EE00273468 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67F4254D1B4D088000273468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67F4252B1B4D088000273468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67F425321B4D088000273468;
+			remoteInfo = HPGooglePhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67F425331B4D088000273468 /* HPGooglePhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HPGooglePhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F425371B4D088000273468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67F425381B4D088000273468 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67F4253A1B4D088000273468 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		67F4253B1B4D088000273468 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		67F425461B4D088000273468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		67F4254C1B4D088000273468 /* HPGooglePhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPGooglePhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F425511B4D088000273468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67F425521B4D088000273468 /* HPGooglePhotoBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPGooglePhotoBrowserTests.m; sourceTree = "<group>"; };
+		67F4255C1B4D08BB00273468 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		67F4255D1B4D08BB00273468 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		67F4255E1B4D08BB00273468 /* HPPhotoBrowserAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPhotoBrowserAnimation.h; sourceTree = "<group>"; };
+		67F4255F1B4D08BB00273468 /* HPPhotoBrowserAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPhotoBrowserAnimation.m; sourceTree = "<group>"; };
+		67F425601B4D08BB00273468 /* HPPhotoBrowserViewContorller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPhotoBrowserViewContorller.h; sourceTree = "<group>"; };
+		67F425611B4D08BB00273468 /* HPPhotoBrowserViewContorller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPhotoBrowserViewContorller.m; sourceTree = "<group>"; };
+		67F425651B4D08C300273468 /* UIViewController+ControllerExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ControllerExt.h"; sourceTree = "<group>"; };
+		67F425661B4D08C300273468 /* UIViewController+ControllerExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ControllerExt.m"; sourceTree = "<group>"; };
+		67F425671B4D08C300273468 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		67F425681B4D08C300273468 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		67F4256B1B4D08CA00273468 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		67F4256C1B4D08CA00273468 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		67F4256E1B4D08D600273468 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		67F425701B4D08EE00273468 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67F425301B4D088000273468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F425491B4D088000273468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67F4252A1B4D088000273468 = {
+			isa = PBXGroup;
+			children = (
+				67F425351B4D088000273468 /* HPGooglePhotoBrowser */,
+				67F4254F1B4D088000273468 /* HPGooglePhotoBrowserTests */,
+				67F425341B4D088000273468 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67F425341B4D088000273468 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67F425331B4D088000273468 /* HPGooglePhotoBrowser.app */,
+				67F4254C1B4D088000273468 /* HPGooglePhotoBrowserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67F425351B4D088000273468 /* HPGooglePhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				67F4256B1B4D08CA00273468 /* ImageViewController.h */,
+				67F4256C1B4D08CA00273468 /* ImageViewController.m */,
+				67F4253A1B4D088000273468 /* AppDelegate.h */,
+				67F4253B1B4D088000273468 /* AppDelegate.m */,
+				67F4255C1B4D08BB00273468 /* CollectionViewCell.h */,
+				67F4255D1B4D08BB00273468 /* CollectionViewCell.m */,
+				67F4255E1B4D08BB00273468 /* HPPhotoBrowserAnimation.h */,
+				67F4255F1B4D08BB00273468 /* HPPhotoBrowserAnimation.m */,
+				67F425601B4D08BB00273468 /* HPPhotoBrowserViewContorller.h */,
+				67F425611B4D08BB00273468 /* HPPhotoBrowserViewContorller.m */,
+				67F425651B4D08C300273468 /* UIViewController+ControllerExt.h */,
+				67F425661B4D08C300273468 /* UIViewController+ControllerExt.m */,
+				67F425671B4D08C300273468 /* ViewController.h */,
+				67F425681B4D08C300273468 /* ViewController.m */,
+				67F4256E1B4D08D600273468 /* Images.xcassets */,
+				67F425451B4D088000273468 /* LaunchScreen.xib */,
+				67F425701B4D08EE00273468 /* Main.storyboard */,
+				67F425361B4D088000273468 /* Supporting Files */,
+			);
+			path = HPGooglePhotoBrowser;
+			sourceTree = "<group>";
+		};
+		67F425361B4D088000273468 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67F425371B4D088000273468 /* Info.plist */,
+				67F425381B4D088000273468 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67F4254F1B4D088000273468 /* HPGooglePhotoBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				67F425521B4D088000273468 /* HPGooglePhotoBrowserTests.m */,
+				67F425501B4D088000273468 /* Supporting Files */,
+			);
+			path = HPGooglePhotoBrowserTests;
+			sourceTree = "<group>";
+		};
+		67F425501B4D088000273468 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67F425511B4D088000273468 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67F425321B4D088000273468 /* HPGooglePhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67F425561B4D088000273468 /* Build configuration list for PBXNativeTarget "HPGooglePhotoBrowser" */;
+			buildPhases = (
+				67F4252F1B4D088000273468 /* Sources */,
+				67F425301B4D088000273468 /* Frameworks */,
+				67F425311B4D088000273468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HPGooglePhotoBrowser;
+			productName = HPGooglePhotoBrowser;
+			productReference = 67F425331B4D088000273468 /* HPGooglePhotoBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67F4254B1B4D088000273468 /* HPGooglePhotoBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67F425591B4D088000273468 /* Build configuration list for PBXNativeTarget "HPGooglePhotoBrowserTests" */;
+			buildPhases = (
+				67F425481B4D088000273468 /* Sources */,
+				67F425491B4D088000273468 /* Frameworks */,
+				67F4254A1B4D088000273468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67F4254E1B4D088000273468 /* PBXTargetDependency */,
+			);
+			name = HPGooglePhotoBrowserTests;
+			productName = HPGooglePhotoBrowserTests;
+			productReference = 67F4254C1B4D088000273468 /* HPGooglePhotoBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67F4252B1B4D088000273468 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = hupeng;
+				TargetAttributes = {
+					67F425321B4D088000273468 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					67F4254B1B4D088000273468 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 67F425321B4D088000273468;
+					};
+				};
+			};
+			buildConfigurationList = 67F4252E1B4D088000273468 /* Build configuration list for PBXProject "HPGooglePhotoBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67F4252A1B4D088000273468;
+			productRefGroup = 67F425341B4D088000273468 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67F425321B4D088000273468 /* HPGooglePhotoBrowser */,
+				67F4254B1B4D088000273468 /* HPGooglePhotoBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67F425311B4D088000273468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F425711B4D08EE00273468 /* Main.storyboard in Resources */,
+				67F425471B4D088000273468 /* LaunchScreen.xib in Resources */,
+				67F4256F1B4D08D600273468 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F4254A1B4D088000273468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67F4252F1B4D088000273468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F4256A1B4D08C300273468 /* ViewController.m in Sources */,
+				67F425621B4D08BB00273468 /* CollectionViewCell.m in Sources */,
+				67F4256D1B4D08CA00273468 /* ImageViewController.m in Sources */,
+				67F4253C1B4D088000273468 /* AppDelegate.m in Sources */,
+				67F425631B4D08BB00273468 /* HPPhotoBrowserAnimation.m in Sources */,
+				67F425391B4D088000273468 /* main.m in Sources */,
+				67F425691B4D08C300273468 /* UIViewController+ControllerExt.m in Sources */,
+				67F425641B4D08BB00273468 /* HPPhotoBrowserViewContorller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F425481B4D088000273468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F425531B4D088000273468 /* HPGooglePhotoBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67F4254E1B4D088000273468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67F425321B4D088000273468 /* HPGooglePhotoBrowser */;
+			targetProxy = 67F4254D1B4D088000273468 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		67F425451B4D088000273468 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67F425461B4D088000273468 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67F425541B4D088000273468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		67F425551B4D088000273468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67F425571B4D088000273468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HPGooglePhotoBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		67F425581B4D088000273468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HPGooglePhotoBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		67F4255A1B4D088000273468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HPGooglePhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HPGooglePhotoBrowser.app/HPGooglePhotoBrowser";
+			};
+			name = Debug;
+		};
+		67F4255B1B4D088000273468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HPGooglePhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HPGooglePhotoBrowser.app/HPGooglePhotoBrowser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67F4252E1B4D088000273468 /* Build configuration list for PBXProject "HPGooglePhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F425541B4D088000273468 /* Debug */,
+				67F425551B4D088000273468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67F425561B4D088000273468 /* Build configuration list for PBXNativeTarget "HPGooglePhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F425571B4D088000273468 /* Debug */,
+				67F425581B4D088000273468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		67F425591B4D088000273468 /* Build configuration list for PBXNativeTarget "HPGooglePhotoBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F4255A1B4D088000273468 /* Debug */,
+				67F4255B1B4D088000273468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67F4252B1B4D088000273468 /* Project object */;
+}
