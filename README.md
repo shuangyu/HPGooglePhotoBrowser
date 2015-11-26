@@ -1,6 +1,6 @@
 # HPGooglePhotoBrowser
 <h2>What this plugin can do?</h2>  
-![alt tag](https://github.com/shuangyu/HPGooglePhotoBrowser/tree/master/HPGooglePhotoBrowser/Resources/demo.gif)
+![alt tag](https://github.com/shuangyu/HPGooglePhotoBrowser/blob/master/HPGooglePhotoBrowser/Resources/demo.gif)
 
 <h2>How to use this plugin?</h2> 
 This plugin is actually a self-defined push-pop animation based on <i>UINavigationControllerDelegate</i>, animation class named <b>HPPhotoBrowserAnimation</b>.</br>
