@@ -11,14 +11,15 @@
 		67F4253C1B4D088000273468 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F4253B1B4D088000273468 /* AppDelegate.m */; };
 		67F425471B4D088000273468 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F425451B4D088000273468 /* LaunchScreen.xib */; };
 		67F425531B4D088000273468 /* HPGooglePhotoBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F425521B4D088000273468 /* HPGooglePhotoBrowserTests.m */; };
-		67F425621B4D08BB00273468 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F4255D1B4D08BB00273468 /* CollectionViewCell.m */; };
-		67F425631B4D08BB00273468 /* HPPhotoBrowserAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F4255F1B4D08BB00273468 /* HPPhotoBrowserAnimation.m */; };
-		67F425641B4D08BB00273468 /* HPPhotoBrowserViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F425611B4D08BB00273468 /* HPPhotoBrowserViewContorller.m */; };
-		67F425691B4D08C300273468 /* UIViewController+ControllerExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F425661B4D08C300273468 /* UIViewController+ControllerExt.m */; };
-		67F4256A1B4D08C300273468 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F425681B4D08C300273468 /* ViewController.m */; };
-		67F4256D1B4D08CA00273468 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F4256C1B4D08CA00273468 /* ImageViewController.m */; };
 		67F4256F1B4D08D600273468 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F4256E1B4D08D600273468 /* Images.xcassets */; };
 		67F425711B4D08EE00273468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F425701B4D08EE00273468 /* Main.storyboard */; };
+		FFF425401C06FDBB006F513E /* HPPhotoBrowserAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF425321C06FDBB006F513E /* HPPhotoBrowserAnimation.m */; };
+		FFF425411C06FDBB006F513E /* UIViewController+ControllerExt.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF425341C06FDBB006F513E /* UIViewController+ControllerExt.m */; };
+		FFF425421C06FDBB006F513E /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF425371C06FDBB006F513E /* CollectionViewCell.m */; };
+		FFF425431C06FDBB006F513E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF425391C06FDBB006F513E /* ViewController.m */; };
+		FFF425441C06FDBB006F513E /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = FFF4253B1C06FDBB006F513E /* demo.gif */; };
+		FFF425451C06FDBB006F513E /* HPPhotoBrowserViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF4253D1C06FDBB006F513E /* HPPhotoBrowserViewContorller.m */; };
+		FFF425461C06FDBB006F513E /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF4253F1C06FDBB006F513E /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,20 +42,21 @@
 		67F4254C1B4D088000273468 /* HPGooglePhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPGooglePhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F425511B4D088000273468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67F425521B4D088000273468 /* HPGooglePhotoBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPGooglePhotoBrowserTests.m; sourceTree = "<group>"; };
-		67F4255C1B4D08BB00273468 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
-		67F4255D1B4D08BB00273468 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
-		67F4255E1B4D08BB00273468 /* HPPhotoBrowserAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPhotoBrowserAnimation.h; sourceTree = "<group>"; };
-		67F4255F1B4D08BB00273468 /* HPPhotoBrowserAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPhotoBrowserAnimation.m; sourceTree = "<group>"; };
-		67F425601B4D08BB00273468 /* HPPhotoBrowserViewContorller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPhotoBrowserViewContorller.h; sourceTree = "<group>"; };
-		67F425611B4D08BB00273468 /* HPPhotoBrowserViewContorller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPhotoBrowserViewContorller.m; sourceTree = "<group>"; };
-		67F425651B4D08C300273468 /* UIViewController+ControllerExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ControllerExt.h"; sourceTree = "<group>"; };
-		67F425661B4D08C300273468 /* UIViewController+ControllerExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ControllerExt.m"; sourceTree = "<group>"; };
-		67F425671B4D08C300273468 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		67F425681B4D08C300273468 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		67F4256B1B4D08CA00273468 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
-		67F4256C1B4D08CA00273468 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		67F4256E1B4D08D600273468 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		67F425701B4D08EE00273468 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FFF425311C06FDBB006F513E /* HPPhotoBrowserAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPhotoBrowserAnimation.h; sourceTree = "<group>"; };
+		FFF425321C06FDBB006F513E /* HPPhotoBrowserAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPhotoBrowserAnimation.m; sourceTree = "<group>"; };
+		FFF425331C06FDBB006F513E /* UIViewController+ControllerExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ControllerExt.h"; sourceTree = "<group>"; };
+		FFF425341C06FDBB006F513E /* UIViewController+ControllerExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ControllerExt.m"; sourceTree = "<group>"; };
+		FFF425361C06FDBB006F513E /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		FFF425371C06FDBB006F513E /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		FFF425381C06FDBB006F513E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FFF425391C06FDBB006F513E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FFF4253B1C06FDBB006F513E /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
+		FFF4253C1C06FDBB006F513E /* HPPhotoBrowserViewContorller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPhotoBrowserViewContorller.h; sourceTree = "<group>"; };
+		FFF4253D1C06FDBB006F513E /* HPPhotoBrowserViewContorller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPhotoBrowserViewContorller.m; sourceTree = "<group>"; };
+		FFF4253E1C06FDBB006F513E /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		FFF4253F1C06FDBB006F513E /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,20 +98,11 @@
 		67F425351B4D088000273468 /* HPGooglePhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				67F4256B1B4D08CA00273468 /* ImageViewController.h */,
-				67F4256C1B4D08CA00273468 /* ImageViewController.m */,
+				FFF425301C06FDBB006F513E /* Animations */,
+				FFF425351C06FDBB006F513E /* Demos */,
+				FFF4253A1C06FDBB006F513E /* Resources */,
 				67F4253A1B4D088000273468 /* AppDelegate.h */,
 				67F4253B1B4D088000273468 /* AppDelegate.m */,
-				67F4255C1B4D08BB00273468 /* CollectionViewCell.h */,
-				67F4255D1B4D08BB00273468 /* CollectionViewCell.m */,
-				67F4255E1B4D08BB00273468 /* HPPhotoBrowserAnimation.h */,
-				67F4255F1B4D08BB00273468 /* HPPhotoBrowserAnimation.m */,
-				67F425601B4D08BB00273468 /* HPPhotoBrowserViewContorller.h */,
-				67F425611B4D08BB00273468 /* HPPhotoBrowserViewContorller.m */,
-				67F425651B4D08C300273468 /* UIViewController+ControllerExt.h */,
-				67F425661B4D08C300273468 /* UIViewController+ControllerExt.m */,
-				67F425671B4D08C300273468 /* ViewController.h */,
-				67F425681B4D08C300273468 /* ViewController.m */,
 				67F4256E1B4D08D600273468 /* Images.xcassets */,
 				67F425451B4D088000273468 /* LaunchScreen.xib */,
 				67F425701B4D08EE00273468 /* Main.storyboard */,
@@ -142,6 +135,40 @@
 				67F425511B4D088000273468 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFF425301C06FDBB006F513E /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				FFF425311C06FDBB006F513E /* HPPhotoBrowserAnimation.h */,
+				FFF425321C06FDBB006F513E /* HPPhotoBrowserAnimation.m */,
+				FFF425331C06FDBB006F513E /* UIViewController+ControllerExt.h */,
+				FFF425341C06FDBB006F513E /* UIViewController+ControllerExt.m */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		FFF425351C06FDBB006F513E /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				FFF425361C06FDBB006F513E /* CollectionViewCell.h */,
+				FFF425371C06FDBB006F513E /* CollectionViewCell.m */,
+				FFF425381C06FDBB006F513E /* ViewController.h */,
+				FFF425391C06FDBB006F513E /* ViewController.m */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		FFF4253A1C06FDBB006F513E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFF4253B1C06FDBB006F513E /* demo.gif */,
+				FFF4253C1C06FDBB006F513E /* HPPhotoBrowserViewContorller.h */,
+				FFF4253D1C06FDBB006F513E /* HPPhotoBrowserViewContorller.m */,
+				FFF4253E1C06FDBB006F513E /* ImageViewController.h */,
+				FFF4253F1C06FDBB006F513E /* ImageViewController.m */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67F425711B4D08EE00273468 /* Main.storyboard in Resources */,
+				FFF425441C06FDBB006F513E /* demo.gif in Resources */,
 				67F425471B4D088000273468 /* LaunchScreen.xib in Resources */,
 				67F4256F1B4D08D600273468 /* Images.xcassets in Resources */,
 			);
@@ -244,14 +272,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67F4256A1B4D08C300273468 /* ViewController.m in Sources */,
-				67F425621B4D08BB00273468 /* CollectionViewCell.m in Sources */,
-				67F4256D1B4D08CA00273468 /* ImageViewController.m in Sources */,
+				FFF425451C06FDBB006F513E /* HPPhotoBrowserViewContorller.m in Sources */,
+				FFF425431C06FDBB006F513E /* ViewController.m in Sources */,
+				FFF425461C06FDBB006F513E /* ImageViewController.m in Sources */,
+				FFF425411C06FDBB006F513E /* UIViewController+ControllerExt.m in Sources */,
+				FFF425421C06FDBB006F513E /* CollectionViewCell.m in Sources */,
 				67F4253C1B4D088000273468 /* AppDelegate.m in Sources */,
-				67F425631B4D08BB00273468 /* HPPhotoBrowserAnimation.m in Sources */,
+				FFF425401C06FDBB006F513E /* HPPhotoBrowserAnimation.m in Sources */,
 				67F425391B4D088000273468 /* main.m in Sources */,
-				67F425691B4D08C300273468 /* UIViewController+ControllerExt.m in Sources */,
-				67F425641B4D08BB00273468 /* HPPhotoBrowserViewContorller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +462,7 @@
 				67F425581B4D088000273468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67F425591B4D088000273468 /* Build configuration list for PBXNativeTarget "HPGooglePhotoBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +471,7 @@
 				67F4255B1B4D088000273468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
