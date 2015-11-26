@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67C05FB61C07353E0046FDB7 /* HPTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C05FB41C07353E0046FDB7 /* HPTransitionView.m */; };
+		67C05FB71C07353E0046FDB7 /* HPTransitionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67C05FB51C07353E0046FDB7 /* HPTransitionView.xib */; };
 		67F425391B4D088000273468 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F425381B4D088000273468 /* main.m */; };
 		67F4253C1B4D088000273468 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F4253B1B4D088000273468 /* AppDelegate.m */; };
 		67F425471B4D088000273468 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F425451B4D088000273468 /* LaunchScreen.xib */; };
@@ -33,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67C05FB31C07353E0046FDB7 /* HPTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPTransitionView.h; sourceTree = "<group>"; };
+		67C05FB41C07353E0046FDB7 /* HPTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPTransitionView.m; sourceTree = "<group>"; };
+		67C05FB51C07353E0046FDB7 /* HPTransitionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPTransitionView.xib; sourceTree = "<group>"; };
 		67F425331B4D088000273468 /* HPGooglePhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HPGooglePhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F425371B4D088000273468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67F425381B4D088000273468 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -144,6 +149,9 @@
 				FFF425321C06FDBB006F513E /* HPPhotoBrowserAnimation.m */,
 				FFF425331C06FDBB006F513E /* UIViewController+ControllerExt.h */,
 				FFF425341C06FDBB006F513E /* UIViewController+ControllerExt.m */,
+				67C05FB31C07353E0046FDB7 /* HPTransitionView.h */,
+				67C05FB41C07353E0046FDB7 /* HPTransitionView.m */,
+				67C05FB51C07353E0046FDB7 /* HPTransitionView.xib */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -215,7 +223,7 @@
 		67F4252B1B4D088000273468 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = hupeng;
 				TargetAttributes = {
 					67F425321B4D088000273468 = {
@@ -253,6 +261,7 @@
 			files = (
 				67F425711B4D08EE00273468 /* Main.storyboard in Resources */,
 				FFF425441C06FDBB006F513E /* demo.gif in Resources */,
+				67C05FB71C07353E0046FDB7 /* HPTransitionView.xib in Resources */,
 				67F425471B4D088000273468 /* LaunchScreen.xib in Resources */,
 				67F4256F1B4D08D600273468 /* Images.xcassets in Resources */,
 			);
@@ -278,6 +287,7 @@
 				FFF425411C06FDBB006F513E /* UIViewController+ControllerExt.m in Sources */,
 				FFF425421C06FDBB006F513E /* CollectionViewCell.m in Sources */,
 				67F4253C1B4D088000273468 /* AppDelegate.m in Sources */,
+				67C05FB61C07353E0046FDB7 /* HPTransitionView.m in Sources */,
 				FFF425401C06FDBB006F513E /* HPPhotoBrowserAnimation.m in Sources */,
 				67F425391B4D088000273468 /* main.m in Sources */,
 			);
@@ -333,6 +343,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -395,6 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HPGooglePhotoBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hupeng.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -405,6 +417,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HPGooglePhotoBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hupeng.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -423,6 +436,7 @@
 				);
 				INFOPLIST_FILE = HPGooglePhotoBrowserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hupeng.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HPGooglePhotoBrowser.app/HPGooglePhotoBrowser";
 			};
@@ -438,6 +452,7 @@
 				);
 				INFOPLIST_FILE = HPGooglePhotoBrowserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hupeng.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HPGooglePhotoBrowser.app/HPGooglePhotoBrowser";
 			};

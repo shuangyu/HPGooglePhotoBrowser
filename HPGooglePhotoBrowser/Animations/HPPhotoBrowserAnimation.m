@@ -7,13 +7,13 @@
 //
 
 #import "HPPhotoBrowserAnimation.h"
+#import "HPTransitionView.h"
 
 @interface HPPhotoBrowserAnimation ()
 {
     id<UIViewControllerContextTransitioning> _context;
-    UIPanGestureRecognizer *_panGesture;
     UINavigationController *_navigationController;
-    UIView *_transitioningView;
+    HPTransitionView *_transitioningView;
     CGPoint _originalCenter;
     int _maxDistance;
 }
@@ -55,10 +55,13 @@
             [_navigationController popViewControllerAnimated:YES];
             break;
         case UIGestureRecognizerStateChanged: {
-            _transitioningView.center = CGPointMake(_originalCenter.x + translation.x, _originalCenter.y + translation.y);
+            
+            _transitioningView.imageView.center = CGPointMake(_originalCenter.x + translation.x, _originalCenter.y + translation.y);
             CGFloat percent = MIN(1.0, distance/_maxDistance * 2.0);
             CGFloat scale   = MAX(0.9, 1.0 - percent);
-            _transitioningView.transform = CGAffineTransformMakeScale(scale, scale);
+            _transitioningView.imageView.transform = CGAffineTransformMakeScale(scale, scale);
+            _transitioningView.maskView.alpha = MAX(0, 1.0 - 2 * percent);
+            
             [_context updateInteractiveTransition:percent];
             break;
         }
@@ -89,23 +92,25 @@
 {
     NSTimeInterval animationDuration = [self transitionDuration:_context];
     
+    UIViewController *fromViewController = [_context viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIViewController *toViewController = [_context viewControllerForKey:UITransitionContextToViewControllerKey];
     if (cancelled) {
         
         [UIView animateWithDuration:0.2 animations:^{
-            _transitioningView.center = _originalCenter;
-            _transitioningView.transform = CGAffineTransformIdentity;
+            _transitioningView.imageView.center = _originalCenter;
+            _transitioningView.imageView.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
             
             [_context cancelInteractiveTransition];
             [_context completeTransition:NO];
-            
             [_transitioningView removeFromSuperview];
-            UIViewController *fromViewController = [_context viewControllerForKey:UITransitionContextFromViewControllerKey];
             fromViewController.view.alpha = 1.0;
         }];
     } else {
+        CGRect frame = [_transitioningView convertRect:_fromRect fromView:toViewController.view];
+        
         [UIView animateWithDuration:animationDuration delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            _transitioningView.frame = _fromRect;
+            _transitioningView.imageView.frame = frame;
         } completion:^(BOOL finished) {
             [_transitioningView removeFromSuperview];
             [_context finishInteractiveTransition];
@@ -152,6 +157,11 @@
         //Add 'to' view to the hierarchy
         [containerView insertSubview:toViewController.view belowSubview:fromViewController.view];
         
+        if (!_imageForInteraction) {
+            [transitionContext completeTransition:YES];
+            return;
+        }
+        
         CGRect frame  = AVMakeRectWithAspectRatioInsideRect(_imageForInteraction.size, fromViewController.view.bounds);
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:frame];
         imageView.contentMode   = UIViewContentModeScaleAspectFill;
@@ -196,13 +206,16 @@
     fromViewController.view.alpha = 0.0;
     
     CGRect frame  = AVMakeRectWithAspectRatioInsideRect(_imageForInteraction.size, fromViewController.view.bounds);
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:frame];
-    imageView.contentMode   = UIViewContentModeScaleAspectFill;
-    imageView.clipsToBounds = TRUE;
-    imageView.image         = _imageForInteraction;
-    [containerView addSubview:imageView];
     
-    _transitioningView = imageView;
+    // set up transition view
+    _transitioningView = [HPTransitionView loadNibForCurrentDevice];
+    _transitioningView.frame = fromViewController.view.bounds;
+    _transitioningView.maskView.backgroundColor = fromViewController.view.backgroundColor;
+    _transitioningView.imageView.frame          = frame;
+    _transitioningView.imageView.contentMode    = UIViewContentModeScaleAspectFill;
+    _transitioningView.imageView.clipsToBounds  = TRUE;
+    _transitioningView.imageView.image          = _imageForInteraction;
+    [containerView addSubview:_transitioningView];
 }
 
 @end

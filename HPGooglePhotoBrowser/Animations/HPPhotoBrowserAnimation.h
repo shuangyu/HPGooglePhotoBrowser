@@ -18,10 +18,13 @@ typedef enum {
 
 - (instancetype)initWithNavigationController:(UINavigationController *)controller;
 
+@property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
+
 @property (nonatomic, assign, getter = isInteractive) BOOL interactive;
 @property (nonatomic, assign) HPPhotoBrowserAnimationType type;
 @property (nonatomic, strong) UIView *viewForInteraction;
 @property (nonatomic, strong) UIImage *imageForInteraction;
 @property (nonatomic, assign) CGRect fromRect;
+
 
 @end
